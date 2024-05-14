@@ -1,0 +1,43 @@
+/* Pembayaran css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Background color */
+}
+
+.container {
+    margin-top: 50px;
+    background-color: #fff; /* Container background color */
+    border-radius: 10px; /* Container border radius */
+    padding: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Container shadow */
+}
+
+.text-judul-halaman {
+    color: #ff0000; /* Title color */
+}
+
+.text-judul {
+    color: #333; /* Section title color */
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.btn-success {
+    background-color: #28a745; /* Button background color */
+    border-color: #28a745; /* Button border color */
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Button background color on hover */
+    border-color: #1e7e34; /* Button border color on hover */
+}
+
+.alert-success {
+    margin-top: 20px;
+    padding: 15px;
+    color: #155724; /* Notification text color */
+    background-color: #d4edda; /* Notification background color */
+    border-color: #c3e6cb; /* Notification border color */
+}
