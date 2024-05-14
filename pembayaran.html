@@ -32,16 +32,17 @@
 
                     <h3 class="text-judul mt-5">Metode pembayaran</h3>
 					<label class="w-100 mb-3 border rounded p-2">
-						<input type="radio" name="pembayaran">
+						<input type="radio" name="pembayaran" value="transfer-bank" id="transfer-bank-option">
 						Transfer Bank
 					</label>
+					<div id="rekening-input" style="display: none;">
+						<input type="text" class="form-control mb-3" placeholder="Nomor Rekening">
+					</div>
 					<label class="w-100 mb-3 border rounded p-2">
-						<input type="radio" name="pembayaran">
+						<input type="radio" name="pembayaran" value="cod">
 						Cash on Delivery (COD)
 					</label>
                     <!-- Courier options -->
-
-                    
 
                     <button type="submit" class="btn btn-lg btn-success mt-5 mb-5">Bayar</button>
                 </form>
@@ -69,6 +70,21 @@
 
             // Show payment success notification
             document.getElementById('payment-success').style.display = 'block';
+        });
+
+        // JavaScript to toggle rekening input based on payment method selection
+        document.getElementById('transfer-bank-option').addEventListener('change', function() {
+            if (this.checked) {
+                document.getElementById('rekening-input').style.display = 'block';
+            }
+        });
+
+        document.querySelectorAll('input[name="pembayaran"]').forEach(function(el) {
+            el.addEventListener('change', function() {
+                if (this.value !== 'transfer-bank') {
+                    document.getElementById('rekening-input').style.display = 'none';
+                }
+            });
         });
     </script>
 </body>

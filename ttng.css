@@ -55,3 +55,71 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
+body {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    color: #ffcc00;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.about-section {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 50px 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #ffcc00;
+}
+
+.about-section p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}

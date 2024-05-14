@@ -34,3 +34,59 @@ li {
 .item-price {
     float: right;
 }
+
+body {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.menu {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.menu h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #ffcc00;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu li:last-child {
+    border-bottom: none;
+}
+
+.item-name {
+    flex: 1;
+    text-align: left;
+}
+
+.item-price {
+    flex: 0;
+    text-align: right;
+}
+
+.new-item {
+    color: #ff4500;
+    font-weight: bold;
+}
